@@ -1,0 +1,6 @@
+com\training\interfaces\other\Leg.class
+com\training\Main.class
+com\training\classes\ModelT1000.class
+com\training\interfaces\other\Hand.class
+com\training\interfaces\other\Head.class
+com\training\interfaces\Robot.class

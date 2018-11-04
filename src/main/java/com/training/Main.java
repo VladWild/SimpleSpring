@@ -3,6 +3,7 @@ package com.training;
 import com.training.classes.ModelT1000;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.StaticApplicationContext;
 
 public class Main {
     private static final String PATH_XML = "context.xml";

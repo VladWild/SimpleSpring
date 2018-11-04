@@ -8,6 +8,7 @@
         <constructor-arg ref = "sonyHand"/>
         <constructor-arg ref = "sonyLeg"/>
         <constructor-arg ref = "sonyHead"/>
+        <constructor-arg name="name2" value="i,,jkm"/>
     </bean>
 
     <bean id="t1000Toshiba" class="com.training.classes.ModelT1000">

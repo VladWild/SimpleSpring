@@ -4,26 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="t1000Sony" class="com.training.classes.ModelT1000">
+    <bean id="t1000" class="com.training.classes.ModelT1000" scope="prototype">
         <constructor-arg ref = "sonyHand"/>
         <constructor-arg ref = "sonyLeg"/>
         <constructor-arg ref = "sonyHead"/>
-        <constructor-arg name="name2" value="i,,jkm"/>
-    </bean>
-
-    <bean id="t1000Toshiba" class="com.training.classes.ModelT1000">
-        <property name = "hand" ref = "toshibaHand"/>
-        <property name = "leg" ref = "toshibaLeg"/>
-        <property name = "head" ref = "toshibaHead"/>
     </bean>
 
     <bean id="sonyHand" class="com.training.classes.sony.SonyHand"/>
     <bean id="sonyHead" class="com.training.classes.sony.SonyHead"/>
     <bean id="sonyLeg" class="com.training.classes.sony.SonyLeg"/>
-
-    <bean id="toshibaHand" class="com.training.classes.toshiba.ToshibaHand"/>
-    <bean id="toshibaHead" class="com.training.classes.toshiba.ToshibaHead"/>
-    <bean id="toshibaLeg" class="com.training.classes.toshiba.ToshibaLeg"/>
 
 </beans>
 

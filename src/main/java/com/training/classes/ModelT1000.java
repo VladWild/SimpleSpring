@@ -7,7 +7,7 @@ import com.training.interfaces.other.Leg;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class ModelT1000 implements Robot, InitializingBean, DisposableBean{
+public class ModelT1000 implements Robot{
     private Hand hand;
     private Leg leg;
     private Head head;
@@ -16,12 +16,11 @@ public class ModelT1000 implements Robot, InitializingBean, DisposableBean{
     public ModelT1000(){
     }
 
-    public ModelT1000(Hand hand, Leg leg, Head head, String name2) {
+    public ModelT1000(Hand hand, Leg leg, Head head) {
         super();
         this.hand = hand;
         this.leg = leg;
         this.head = head;
-        this.name = name;
     }
 
     @Override
@@ -53,16 +52,6 @@ public class ModelT1000 implements Robot, InitializingBean, DisposableBean{
 
     public void setHead(Head head) {
         this.head = head;
-    }
-
-    @Override
-    public void destroy() throws Exception {
-        System.out.println("Disposable");
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("Initializing");
     }
 }
 

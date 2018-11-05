@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="context.xml"/>
+
+    <!--этот конвеер в единственном экземпляре и создает любое количество роботов, описанных в t1000-->
+    <bean id="t1000Conveyor" class="com.training.classes.conveyor.T1000Conveyor" scope="singleton">
+        <lookup-method name="createRobot" bean="t1000"/>
+    </bean>
+
+</beans>
+
+
+
